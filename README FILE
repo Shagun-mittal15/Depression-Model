@@ -1,0 +1,97 @@
+Depression Severity Detection Model
+
+Overview
+This project focuses on predicting depression severity levels among students using machine learning techniques. Data was collected through a Google Form that included:
+- Standard GAD-7 questionnaire items
+- Additional lifestyle, academic, and mental health related questions
+
+The collected responses were preprocessed, transformed, and used to train multiple machine learning models for depression severity classification.
+
+The framework includes:
+- Data preprocessing
+- Missing value handling
+- Feature engineering
+- Encoding categorical variables
+- SMOTE for class balancing
+- Model training and evaluation
+
+Technologies Used
+- Python
+- Pandas
+- NumPy
+- Scikit-learn
+- Imbalanced-learn (SMOTE)
+- Joblib
+
+Dataset Information
+Data Collection
+The dataset was collected using a Google Form containing:
+- GAD-7 based mental health assessment questions
+- Additional questions related to:
+  - Academic workload
+  - Sleep quality
+  - Lifestyle habits
+  - Placement/job worries
+  - Exercise habits
+  - Panic attacks
+  - Social support
+  - Dietary habits
+
+Dataset Features
+The dataset includes:
+- Gender
+- Age
+- Year of Study
+- Residence
+- Academic Workload
+- Placement/Job Worries
+- Sleep Quality
+- Exercise Per Week
+- Alcohol Use
+- Tobacco Use
+- Dietary Habits
+- Panic Attacks
+- Loneliness
+- Coping Strategies
+- Sleep Hours
+- Depression Score
+- Depression Level
+
+Depression Severity Classification
+
+Depression levels were calculated using questionnaire scores and categorized into:
+- Low
+- Medium
+- High
+
+Data Preprocessing
+The following preprocessing techniques were applied:
+- Missing value handling
+- Removing extra spaces from columns
+- Feature transformation
+- Midpoint extraction from age and sleep ranges
+- Ordinal Encoding
+- One-Hot Encoding
+- SMOTE for handling class imbalance
+
+Machine Learning Models Used
+- Logistic Regression
+- Random Forest Classifier
+
+ Model Performance
+Logistic Regression
+Random Forest Classifier (Best Performing Model)
+
+Random Forest achieved the best results after applying SMOTE and Stratified K-Fold Cross Validation.
+
+Project Workflow
+
+1. Data Collection using Google Forms
+2. Data Cleaning and Preprocessing
+3. Feature Engineering
+4. Encoding Categorical Features
+5. Applying SMOTE
+6. Model Training
+7. Model Evaluation
+8. Saving ML Pipeline
+9. Deploying with FastAPI
